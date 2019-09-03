@@ -2,10 +2,10 @@
 This is a test app built using the Django introduction tutorial. The goal is to help the team understand how Django interacts with the BioChem project.
 
 ## Usage
-`python3 manage.py runserver`
+`python3 manage.py runserver`   
 Starts development server on the internal IP at port 8000.
 
-`python manage.py runserver 8080`
+`python manage.py runserver 8080`   
 A different port can be specified by it at the end of the argument. This example sets the port to 8080.
 
 ## File Hierarchy
