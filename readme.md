@@ -1,14 +1,15 @@
 # Django Test App
 
 ## File Hierarchy
-`mysite/
+```
+mysite/
     manage.py
     mysite/
         __init__.py
         settings.py
         urls.py
         wsgi.py
-`
+```
 
 - The outer **mysite/** root directory is just a container for your project.
 
