@@ -1,6 +1,8 @@
 # Django Test App
 This is a test app built using the Django introduction tutorial. The goal is to help the team understand how Django interacts with the BioChem project.
 
+The tutorial can be found [here](https://docs.djangoproject.com/en/2.2/intro/).
+
 ## Usage
 `python3 manage.py runserver`   
 Starts development server on the internal IP at port 8000.
@@ -34,8 +36,7 @@ mysite/
 - **manage.py**: A command-line utility that lets you interact with this Django project in various ways.
 
 ### /mysite Directory
-
-- The **mysite/** directory is the actual Python package for your project. Its name is the Python package name you’ll need to use to import anything inside it (e.g. mysite.urls).
+The **mysite/** directory is the actual Python package for your project. Its name is the Python package name you’ll need to use to import anything inside it (e.g. mysite.urls).
 
 - **mysite/__init__.py**: An empty file that tells Python that this directory should be considered a Python package.
 
