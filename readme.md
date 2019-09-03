@@ -6,7 +6,7 @@ This is a test app built using the Django introduction tutorial. The goal is to 
 Starts development server on the internal IP at port 8000.
 
 `python manage.py runserver 8080`   
-A different port can be specified by it at the end of the argument. This example sets the port to 8080.
+A different port can be specified by adding it at the end of the argument. This example sets the port to 8080.
 
 ## File Hierarchy
 ```
