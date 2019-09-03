@@ -3,19 +3,25 @@ This is a test app built using the Django introduction tutorial. The goal is to 
 
 The tutorial can be found [here](https://docs.djangoproject.com/en/2.2/intro/).
 
-## Usage
+## Commands
 `python3 manage.py runserver`   
 Starts development server on the internal IP at port 8000.
 
 `python3 manage.py runserver 8080`   
 A different port can be specified by adding it at the end of the argument. This example sets the port to 8080.
 
+`python3 manage.py makemigrations`      
+Create migrations for changes in models.
+
 `python3 manage.py migrate`     
-Looks at the INSTALLED_APPS setting and creates any necessary database tables according to the database settings in your mysite/settings.py file and the database migrations shipped with the app 
+Apply those changes to the database.
+
+`python3 manage.py createsuperuser`
+Creates a user who can login to the admin site. This will prompt you to enter in a username, email address, and a password.
 
 ## File Hierarchy
 ```
-mysite/
+DjangoTestApp/
     manage.py
     mysite/
         __init__.py
@@ -41,14 +47,23 @@ mysite/
 ### /mysite Directory
 The **mysite/** directory is the actual Python package for your project. Its name is the Python package name you’ll need to use to import anything inside it (e.g. mysite.urls).
 
-- **mysite/__init__.py**: An empty file that tells Python that this directory should be considered a Python package.
+- **__init__.py**: An empty file that tells Python that this directory should be considered a Python package.
 
-- **mysite/settings.py**: Settings/configuration for this Django project.
+- **settings.py**: Settings/configuration for this Django project.
 
-- **mysite/urls.py**: The URL declarations for this Django project; a “table of contents” of your Django-powered site.
+- **urls.py**: The URL declarations for this Django project; a “table of contents” of your Django-powered site.
 
-- **mysite/wsgi.py**: An entry-point for WSGI-compatible web servers to serve your project.
+- **wsgi.py**: An entry-point for WSGI-compatible web servers to serve your project.
 
 ### /polls Directory
+The **polls/** directory contains files for the polls app. There can be multiple apps in the DjangoTestApp. This is one of potientially many.
+
+- **admin.py**:
 
 - **models.py**: Models are your database layout, with additional metadata.
+
+- **tests.py**:
+
+- **urls.py**: Calls the views by mapping them to a url.
+
+- **views.py**: Contains the view for the polls app. 
