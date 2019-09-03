@@ -10,7 +10,7 @@ Starts development server on the internal IP at port 8000.
 `python3 manage.py runserver 8080`   
 A different port can be specified by adding it at the end of the argument. This example sets the port to 8080.
 
-`python3 manage.py migrate` 
+`python3 manage.py migrate`     
 Looks at the INSTALLED_APPS setting and creates any necessary database tables according to the database settings in your mysite/settings.py file and the database migrations shipped with the app 
 
 ## File Hierarchy
