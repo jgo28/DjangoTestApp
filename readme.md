@@ -16,7 +16,7 @@ Create migrations for changes in models.
 `python3 manage.py migrate`     
 Apply those changes to the database.
 
-`python3 manage.py createsuperuser`
+`python3 manage.py createsuperuser`     
 Creates a user who can login to the admin site. This will prompt you to enter in a username, email address, and a password.
 
 ## File Hierarchy
