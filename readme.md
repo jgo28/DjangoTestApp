@@ -1,7 +1,23 @@
 # Django Test App
-This is a test app built using the Django introduction tutorial. The goal is to help the team understand how Django interacts with the BioChem project.
+This is a test app built following the Django introduction tutorial. The goal is to help our team understand how Django interacts and integrates with the BioChem project.
 
 The tutorial can be found [here](https://docs.djangoproject.com/en/2.2/intro/).
+
+## Getting Started
+If you haven't already, consider installing an environment manager for Python such as [Conda](https://docs.conda.io/en/latest/). It's helpful because it isolates Python dependencies so your computer system isn't bogged down by them.
+
+Run this command to install the libraries/frameworks that this application uses.
+
+`pip3 install -r requirements.txt`
+
+`python3 manage.py runserver`
+
+## Key Django Concepts
+- **App**: A small library representing a discrete part of a larger project. It is a submodule of a web application that is designated a duty – e.g., a Weblog system, a database of public records or a simple poll app. In theory, you could take an app and place it in an entirely different project and it would still work.
+
+- **Project**: A web application using Django. It is a collection of configuration and apps for a particular website. Basically, it is the website itself. A project can contain multiple apps.
+
+- **View**: A Python function that takes a web request and returns a web response. Basically, it defines what is going to be displayed on a web page like the HTML contents. Views in Django have to be created in an app's `views.py` file.
 
 ## Commands
 `python3 manage.py runserver`   
