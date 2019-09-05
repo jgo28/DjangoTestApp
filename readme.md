@@ -1,7 +1,10 @@
 # Django Test App
-This is a test app built following the Django introduction tutorial. The goal is to help our team understand how Django interacts and integrates with the BioChem project.
+This is a test app built following the Django introduction tutorial. The goal of this app and guide is to help you gain a better understanding about the basics of Django.
 
 The tutorial can be found [here](https://docs.djangoproject.com/en/2.2/intro/).
+
+## What is Django?
+Django is a web application framework written in Python. The main goal of the Django framework is to allow developers to focus on components of the application that are new instead of spending time on already developed components. Django includes things you can use to handle common Web development tasks such as authentication, content administration, site maps, and RSS feeds.
 
 ## Getting Started
 If you haven't already, consider installing an environment manager for Python such as [Conda](https://docs.conda.io/en/latest/). It's helpful because it isolates Python dependencies so your computer system isn't bogged down by them.
