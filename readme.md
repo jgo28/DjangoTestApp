@@ -6,9 +6,11 @@ The tutorial can be found [here](https://docs.djangoproject.com/en/2.2/intro/).
 ## Getting Started
 If you haven't already, consider installing an environment manager for Python such as [Conda](https://docs.conda.io/en/latest/). It's helpful because it isolates Python dependencies so your computer system isn't bogged down by them.
 
-Run this command to install the libraries/frameworks that this application uses.
+Run this command to install the libraries/frameworks that this application uses:
 
 `pip3 install -r requirements.txt`
+
+To launch the web application:
 
 `python3 manage.py runserver`
 
@@ -21,6 +23,10 @@ Run this command to install the libraries/frameworks that this application uses.
 
 - **Model**: It contains the essential fields and behaviors of the data you're storing. Generally, each model maps to a single database table. Another way to think about this is that Django converts your model into a SQL table. Maybe you want to store information about what year your family members were born. You specify in the model what attributes/things should be stored in the SQL table you want to make. In this case, one variable would be the name of the family member and the another variable would be the date they were born. Django will automatically create a SQL table for this. More information about models can be found [here](https://docs.djangoproject.com/en/2.2/topics/db/models/).
 
+- **Migration**: This is Django’s way of storing changes you make to your models (adding a field, deleting a model, etc.) into your database schema. More information about migrations can be found [here](https://docs.djangoproject.com/en/2.2/topics/migrations/).
+
+- **Template**: Django needs a convenient way to generate HTML dynamically. A template contains the static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted. 
+
 ## Commands
 `python3 manage.py runserver`   
 Starts development server on the internal IP at port 8000.
@@ -29,10 +35,10 @@ Starts development server on the internal IP at port 8000.
 A different port can be specified by adding it at the end of the argument. This example sets the port to 8080.
 
 `python3 manage.py makemigrations`      
-Create migrations for changes in models.
+Tells Django that you’ve made some changes to your models and that you’d like the changes to be stored as a migration. 
 
 `python3 manage.py migrate`     
-Apply those changes to the database.
+Runs the migrations for you and manage your database schema automatically. This command takes all the migrations that haven’t been applied and runs them against your database - essentially, synchronizing the changes you made to your models with the schema in the database.
 
 `python3 manage.py createsuperuser`     
 Creates a user who can login to the admin site. This will prompt you to enter in a username, email address, and a password.
@@ -52,6 +58,8 @@ DjangoTestApp/
         apps.py
         migrations/
             __init__.py
+        templates/
+            index.html
         models.py
         tests.py
         urls.py
@@ -85,3 +93,5 @@ The **polls/** directory contains files for the polls app. There can be multiple
 - **urls.py**: Calls the views by mapping them to a url.
 
 - **views.py**: Contains the view for the polls app. 
+
+- **templates/**: Django will look for templates in here.
