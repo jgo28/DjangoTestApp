@@ -1,7 +1,7 @@
 # Django Test App
-This is a test app built following the Django introduction tutorial. The goal of this app and guide is to help you gain a better understanding about the basics of Django.
+This is a test app built following the Django introduction tutorial. The goal of this app and guide is to help you gain a better understanding about the basics of Django. I think Django has a bit of a learning curve so no need to worry if you don't understand it immediately.
 
-The tutorial can be found [here](https://docs.djangoproject.com/en/2.2/intro/).
+The tutorial that was used can be found [here](https://docs.djangoproject.com/en/2.2/intro/).
 
 ## What is Django?
 Django is a web application framework written in Python. The main goal of the Django framework is to allow developers to focus on components of the application that are new instead of spending time on already developed components. Django includes things you can use to handle common Web development tasks such as authentication, content administration, site maps, and RSS feeds.
@@ -20,7 +20,7 @@ Django is a web application framework written in Python. The main goal of the Dj
 - **Template**: Django needs a convenient way to generate HTML dynamically. A template contains the static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted. 
 
 ## Getting Started
-If you haven't already, consider installing an environment manager for Python such as [Conda](https://docs.conda.io/en/latest/). It's helpful because it isolates Python dependencies so your computer system isn't bogged down by them.
+If you haven't already, consider installing an environment manager for Python such as [Conda](https://docs.conda.io/en/latest/). It's helpful because it isolates Python dependencies so your computer system isn't being overflowed with them.
 
 Run this command to install the libraries/frameworks that this application uses:
 
@@ -29,6 +29,11 @@ Run this command to install the libraries/frameworks that this application uses:
 To launch the web application:
 
 `python3 manage.py runserver`
+
+When server is launched, the only viewable web pages right now are:    
+
+http://127.0.0.1:8000/polls/  
+http://127.0.0.1:8000/admin/
 
 ## Commands
 Important and frequently used arguments.
