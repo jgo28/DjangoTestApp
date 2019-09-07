@@ -6,18 +6,7 @@ The tutorial can be found [here](https://docs.djangoproject.com/en/2.2/intro/).
 ## What is Django?
 Django is a web application framework written in Python. The main goal of the Django framework is to allow developers to focus on components of the application that are new instead of spending time on already developed components. Django includes things you can use to handle common Web development tasks such as authentication, content administration, site maps, and RSS feeds.
 
-## Getting Started
-If you haven't already, consider installing an environment manager for Python such as [Conda](https://docs.conda.io/en/latest/). It's helpful because it isolates Python dependencies so your computer system isn't bogged down by them.
-
-Run this command to install the libraries/frameworks that this application uses:
-
-`pip3 install -r requirements.txt`
-
-To launch the web application:
-
-`python3 manage.py runserver`
-
-## Key Django Concepts
+### Key Django Concepts
 - **Project**: A web application using Django. It is a collection of configuration and apps for a particular website. Basically, it is the website itself. A project can contain multiple apps.
 
 - **App**: Generally, apps are what make up a project. It is a submodule of a web application that is designated a duty – e.g., a Weblog system, a database of public records or a simple poll app. In theory, you could take an app and place it in an entirely different project and it would still work.
@@ -30,7 +19,20 @@ To launch the web application:
 
 - **Template**: Django needs a convenient way to generate HTML dynamically. A template contains the static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted. 
 
+## Getting Started
+If you haven't already, consider installing an environment manager for Python such as [Conda](https://docs.conda.io/en/latest/). It's helpful because it isolates Python dependencies so your computer system isn't bogged down by them.
+
+Run this command to install the libraries/frameworks that this application uses:
+
+`pip3 install -r requirements.txt`
+
+To launch the web application:
+
+`python3 manage.py runserver`
+
 ## Commands
+Important and frequently used arguments.
+
 `python3 manage.py runserver`   
 Starts development server on the internal IP at port 8000.
 
