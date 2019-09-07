@@ -1,7 +1,13 @@
 # Django Test App
-This is a test app built following the Django introduction tutorial. The goal of this app and guide is to help you gain a better understanding about the basics of Django. I think Django has a bit of a learning curve so no need to worry if you don't understand it immediately.
+This is a test app built following the Django introduction tutorial. The goal of this app and guide is to help you gain a better understanding about the basics of Django. I think Django has a bit of a learning curve don't worry if you don't understand it immediately. 
+
+If you want to play around with the code, feel free to make another branch in this GitHub or clone the repository.
 
 The tutorial that was used can be found [here](https://docs.djangoproject.com/en/2.2/intro/).
+
+[Here's](https://realpython.com/get-started-with-django-1/) another helpful tutorial I found but didn't choose to implement for this repository. 
+
+At least for me, the first tutorial I linked has a lot of advanced concepts that seems to be dumped on you all at once. The second one, which I found recently, seems easier to comprehend for first time learners.
 
 ## What is Django?
 Django is a web application framework written in Python. The main goal of the Django framework is to allow developers to focus on components of the application that are new instead of spending time on already developed components. Django includes things you can use to handle common Web development tasks such as authentication, content administration, site maps, and RSS feeds.
@@ -53,6 +59,9 @@ Runs the migrations for you and manage your database schema automatically. This 
 `python3 manage.py createsuperuser`     
 Creates a user who can login to the admin site. This will prompt you to enter in a username, email address, and a password.
 
+`python3 manage.py startapp [app_name]`
+Creates a directory with several files for the app with your given app name.
+
 ## File Hierarchy
 ```
 DjangoTestApp/
@@ -85,7 +94,7 @@ The **mysite/** directory is the actual Python package for your project. Its nam
 
 - **__init__.py**: An empty file that tells Python that this directory should be considered a Python package.
 
-- **settings.py**: Settings/configuration for this Django project.
+- **settings.py**: Settings/configuration for this Django project. You can set the database type that is used here.
 
 - **urls.py**: The URL declarations for this Django project; a “table of contents” of your Django-powered site.
 
@@ -94,14 +103,16 @@ The **mysite/** directory is the actual Python package for your project. Its nam
 ### /polls Directory
 The **polls/** directory contains files for the polls app. There can be multiple apps in the DjangoTestApp. This is one of potientially many.
 
-- **admin.py**:
+- **admin.py**: Contains settings for the Django admin pages.
 
-- **models.py**: Models are your database layout, with additional metadata.
+- **apps.py**: Contains settings for the application configuration.
 
-- **tests.py**:
+- **models.py**: Contains a series of classes that Django’s ORM converts to database tables.
+
+- **tests.py**: Contains test classes.
 
 - **urls.py**: Calls the views by mapping them to a url.
 
 - **views.py**: Contains the view for the polls app. 
 
-- **templates/**: Django will look for templates in here.
+- **templates/**: Contains functions and classes that handle what data is displayed in the HTML templates.
