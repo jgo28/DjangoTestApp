@@ -26,7 +26,7 @@ Django is a web application framework written in Python. The main goal of the Dj
 - **Template**: Django needs a convenient way to generate HTML dynamically. A template contains the static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted. 
 
 ## Getting Started
-If you haven't already, consider installing an environment manager for Python such as [Conda](https://docs.conda.io/en/latest/). It's helpful because it isolates Python dependencies so your computer system isn't being overflowed with them.
+If you haven't already, consider installing an environment manager for Python such as [Conda](https://docs.conda.io/en/latest/) or simply using virtualenv. It's helpful because it isolates Python dependencies so your computer system isn't being overflowed with them. Here's a description of each [here](http://deeplearning.lipingyang.org/2018/12/23/anaconda-vs-miniconda-vs-virtualenv/).
 
 Run this command to install the libraries/frameworks that this application uses:
 
