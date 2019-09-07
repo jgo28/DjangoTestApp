@@ -59,7 +59,7 @@ Runs the migrations for you and manage your database schema automatically. This 
 `python3 manage.py createsuperuser`     
 Creates a user who can login to the admin site. This will prompt you to enter in a username, email address, and a password.
 
-`python3 manage.py startapp [app_name]`
+`python3 manage.py startapp [app_name]`     
 Creates a directory with several files for the app with your given app name.
 
 ## File Hierarchy
