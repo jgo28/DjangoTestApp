@@ -11,7 +11,7 @@ Django is a web application framework written in Python. The main goal of the Dj
 
 - **App**: Generally, apps are what make up a project. It is a submodule of a web application that is designated a duty – e.g., a Weblog system, a database of public records or a simple poll app. In theory, you could take an app and place it in an entirely different project and it would still work.
 
-- **View**: A Python function that takes a web request and returns a web response. Basically, it defines what is going to be displayed on a web page like the HTML contents. Views in Django have to be created in an app's `views.py` file.
+- **View**: A “type” of Web page in your Django application that generally serves a specific function and has a specific template. Basically, it defines what is going to be displayed on a web page like the HTML contents. Views in Django have to be created in an app's `views.py` file.
 
 - **Model**: It contains the essential fields and behaviors of the data you're storing. Generally, each model maps to a single database table. Another way to think about this is that Django converts your model into a SQL table. Maybe you want to store information about what year your family members were born. You specify in the model what attributes/things should be stored in the SQL table you want to make. In this case, one variable would be the name of the family member and the another variable would be the date they were born. Django will automatically create a SQL table for this. More information about models can be found [here](https://docs.djangoproject.com/en/2.2/topics/db/models/).
 
