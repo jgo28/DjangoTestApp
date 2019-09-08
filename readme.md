@@ -1,5 +1,5 @@
 # Django Test App
-This is a test app built following the Django introduction tutorial. The goal of this app and guide is to help you gain a better understanding about the basics of Django. I think Django has a bit of a learning curve don't worry if you don't understand it immediately. 
+This is a test app built following the Django introduction tutorial. The goal of this app and guide is to help you gain a better understanding about the basics of Django. I think Django can be overwhelming at first so don't worry if you don't understand it immediately. 
 
 If you want to play around with the code, feel free to make another branch in this GitHub or clone the repository.
 
