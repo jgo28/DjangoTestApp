@@ -7,8 +7,6 @@ The tutorial that was used can be found [here](https://docs.djangoproject.com/en
 
 [Here's](https://realpython.com/get-started-with-django-1/) another helpful tutorial I found but didn't choose to implement for this repository. 
 
-At least for me, the first tutorial I linked has a lot of advanced concepts that seems to be dumped on you all at once. The second one, which I found recently, seems easier to comprehend for first time learners.
-
 ## What is Django?
 Django is a web application framework written in Python. The main goal of the Django framework is to allow developers to focus on components of the application that are new instead of spending time on already developed components. Django includes things you can use to handle common Web development tasks such as authentication, content administration, site maps, and RSS feeds.
 
