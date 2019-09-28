@@ -77,6 +77,9 @@ DjangoTestApp/
             __init__.py
         templates/
             index.html
+            /polls
+                detail.html
+                results.html
         models.py
         tests.py
         urls.py
