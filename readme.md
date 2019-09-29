@@ -121,3 +121,8 @@ The **polls/** directory contains files for the polls app. There can be multiple
 - **views.py**: Contains the view for the polls app. 
 
 - **templates/**: Contains functions and classes that handle what data is displayed in the HTML templates.
+
+## Testing in Django
+Django has ways to create automated tests for your Django code. If you aren't familiar with testing, creating code to test the application is a great way to identify and prevent problems.
+
+[This](https://docs.djangoproject.com/en/2.2/intro/tutorial05/) Django tutorial covers the basics on how to test each part that makes up the application.
