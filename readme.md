@@ -60,6 +60,10 @@ Creates a user who can login to the admin site. This will prompt you to enter in
 `python3 manage.py startapp [app_name]`     
 Creates a directory with several files for the app with your given app name.
 
+`python3 manage.py test [app]`
+Ex. `python3 manage.py test polls`
+Run automated tests to test Django code.
+
 ## File Hierarchy
 ```
 DjangoTestApp/
